@@ -14,12 +14,12 @@ const firebaseConfig = {
 username = localStorage.getItem("loginusername");
 room_name = localStorage.getItem("roomaddinput");
 
-function onclick() {
+function onclickk() {
       msgstore = document.getElementById("send_me_the_message").value;
       firebase.database().ref(room_name).push({
             name:username,
             message:msgstore,
-            likes:0
+            like:0
       });
 }
 
